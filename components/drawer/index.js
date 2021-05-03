@@ -61,8 +61,12 @@ const Drawer = () => {
 	const lists = (
 		<List className={classes.listWrapper}>
 			<ListItem onClick={toggleDrawerHandler} button>
-				<HomeIcon />
-				home
+				<Link href='/'>
+					<a>
+						<HomeIcon />
+						home
+					</a>
+				</Link>
 			</ListItem>
 			<ListItem onClick={toggleDrawerHandler} button>
 				<PeopleIcon />
@@ -167,8 +171,12 @@ const Drawer = () => {
 				</List>
 			</Collapse>
 			<ListItem onClick={toggleDrawerHandler} button>
-				<ContactsIcon />
-				contact
+				<Link>
+					<a>
+						<ContactsIcon />
+						contact
+					</a>
+				</Link>
 			</ListItem>
 		</List>
 	);
