@@ -62,7 +62,7 @@ const Drawer = () => {
 		<List className={classes.listWrapper}>
 			<ListItem onClick={toggleDrawerHandler} button>
 				<Link href='/'>
-					<a>
+					<a className={classes.link}>
 						<HomeIcon />
 						home
 					</a>
@@ -171,8 +171,8 @@ const Drawer = () => {
 				</List>
 			</Collapse>
 			<ListItem onClick={toggleDrawerHandler} button>
-				<Link>
-					<a>
+				<Link href='/contact'>
+					<a className={classes.link}>
 						<ContactsIcon />
 						contact
 					</a>

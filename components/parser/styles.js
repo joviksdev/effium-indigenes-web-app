@@ -8,10 +8,7 @@ import {
 const styles = () => ({
 	wrapper: {
 		position: 'relative',
-		height: '40vh',
-		'@media (min-width: 600px)': {
-			height: '60vh',
-		},
+		height: '360px',
 	},
 	membershipInfoContainer: {
 		...container,
@@ -54,8 +51,9 @@ const styles = () => ({
 		},
 	},
 	headerText: {
-		fontSize: '20px',
+		fontSize: '28px',
 		marginBottom: '20px',
+		color: infoColor[4],
 		'@media (min-width:600px)': {
 			fontSize: '40px',
 		},

@@ -48,6 +48,10 @@ const styles = () => ({
 	rotate: {
 		transform: 'rotate(90deg)',
 	},
+	link: {
+		display: 'flex',
+		alignItems: 'center',
+	},
 });
 
 export default styles;
