@@ -3,6 +3,7 @@ import {
 	btn,
 	container,
 	grayColor,
+	infoColor,
 } from '../../assets/js/componentsStyles';
 
 const styles = () => ({
@@ -15,12 +16,24 @@ const styles = () => ({
 			display: 'block',
 		},
 	},
+	contactHeader: {
+		...container,
+		paddingTop: '20px',
+		paddingBottom: '20px',
+	},
 	appHeaderText: {
 		fontSize: '22px',
 		color: grayColor[4],
 		fontFamily: '"Yeseva One", "Roboto", serif',
 		'@media (min-width: 600px)': {
 			fontSize: '26px',
+		},
+	},
+	headerText: {
+		fontSize: '20px',
+		marginBottom: '15px',
+		'@media (min-width:600px)': {
+			fontSize: '40px',
 		},
 	},
 	container: {
@@ -49,6 +62,17 @@ const styles = () => ({
 		'& .MuiTypography-root': {
 			marginLeft: '5px',
 		},
+	},
+	breadCrumbs: {
+		'& a': {
+			color: grayColor[4],
+		},
+		'& .MuiBreadcrumbs-separator': {
+			color: grayColor[4],
+		},
+	},
+	active: {
+		color: `${infoColor[4]} !important`,
 	},
 });
 

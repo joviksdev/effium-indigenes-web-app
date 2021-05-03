@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './styles';
 import cx from 'classnames';
 import { historyLists, mediaLists } from './data';
@@ -42,7 +43,11 @@ const HeaderNav = () => {
 		<Box marginTop='10px'>
 			<Box className={classes.container}>
 				<MenuList className={classes.menu}>
-					<MenuItem>home</MenuItem>
+					<MenuItem>
+						<Link href='/'>
+							<a>home</a>
+						</Link>
+					</MenuItem>
 					<MenuItem>membership</MenuItem>
 					<MenuItem onClick={toggleMediaDropdown}>
 						media <ExpandMoreIcon className={rotateMediaIcon} />
@@ -87,7 +92,11 @@ const HeaderNav = () => {
 							</Paper>
 						</ClickAwayListener>
 					</Popper>
-					<MenuItem>contact</MenuItem>
+					<MenuItem>
+						<Link href='/contact'>
+							<a>contact</a>
+						</Link>
+					</MenuItem>
 				</MenuList>
 			</Box>
 		</Box>

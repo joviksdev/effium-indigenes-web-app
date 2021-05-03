@@ -2,7 +2,7 @@ import {
 	transition,
 	whiteColor,
 	grayColor,
-} from '../../../assets/js/stylesComponents';
+} from '../../assets/js/componentsStyles';
 
 const styles = () => ({
 	input: {

@@ -10,8 +10,8 @@ export default function Home() {
 		<Layout>
 			{/* <Carousel /> */}
 			<Membership />
-			<NewsHighlight />
 			<History />
+			<NewsHighlight />
 			<Gallery />
 		</Layout>
 	);
