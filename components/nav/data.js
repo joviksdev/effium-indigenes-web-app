@@ -23,19 +23,19 @@ const mediaLists = [
 const historyLists = [
 	{
 		name: 'history',
-		path: '/',
+		path: '/about#history',
 	},
 	{
 		name: 'custom and tradition',
-		path: '/',
-	},
-	{
-		name: 'language',
-		path: '/',
+		path: '/about#custom-and-tradition',
 	},
 	{
 		name: 'festival',
-		path: '/',
+		path: '/about#festival',
+	},
+	{
+		name: 'ASSEI',
+		path: '/about#ASSEI',
 	},
 ];
 

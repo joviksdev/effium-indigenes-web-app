@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GoogleMapReact from 'google-map-react';
 import styles from './styles';
 
@@ -11,19 +11,22 @@ const useStyles = makeStyles(styles);
 
 const LocationMap = () => {
 	const classes = useStyles();
+	useEffect(() => {
+		L.mapquest.key = process.env.NEXT_PUBLIC_MAPQUEST_API_KEY;
+		var map = L.mapquest.map('map', {
+			center: [6.63105, 8.05814],
+			layers: L.mapquest.tileLayer('map'),
+			zoom: 12,
+		});
+
+		map.addControl(L.mapquest.control());
+	}, []);
 	return (
-		<Box className={classes.map}>
+		<Box marginBottom='20px' className={classes.mapWrapper}>
 			<Typography className={classes.headerText} variant='h6'>
 				Geo Location
 			</Typography>
-			<GoogleMapReact
-				bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_API_KEY }}
-				defaultCenter={{
-					lat: 6.63105,
-					lng: 8.05814,
-				}}
-				defaultZoom={12}
-			></GoogleMapReact>
+			<Box className={classes.map} id='map' width='100%'></Box>
 		</Box>
 	);
 };

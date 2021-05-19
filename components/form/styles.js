@@ -1,10 +1,23 @@
 import {
 	transition,
-	whiteColor,
 	grayColor,
+	btn,
+	whiteColor,
+	blueColor,
 } from '../../assets/js/componentsStyles';
 
 const styles = () => ({
+	text: {
+		display: 'flex',
+		alignItems: 'center',
+		'& .MuiSvgIcon-root': {
+			fontSize: '18px',
+			marginRight: '5px',
+		},
+	},
+	infoText: {
+		padding: '0px 8px !important',
+	},
 	input: {
 		...transition,
 		'& .MuiInput-underline:after': {
@@ -40,60 +53,31 @@ const styles = () => ({
 		'&  .MuiInputLabel-formControl.Mui-focused': {
 			top: '0px !important',
 		},
-		'& .MuiOutlinedInput-multiline': {
-			padding: '0px !important',
-		},
 		'& .MuiAutocomplete-input': {
 			padding: '1px !important',
 		},
-	},
-	backgroundColor: {
-		'& .MuiInputBase-input': {
-			backgroundColor: whiteColor,
-			borderRadius: '5px',
+		'& .MuiAutocomplete-inputRoot': {
+			paddingRight: '0px !important',
+		},
+		'& .MuiAutocomplete-endAdornment ': {
+			right: '3px !important',
+		},
+		'& .MuiAutocomplete-clearIndicator': {
+			display: 'none',
+		},
+		'@media (min-width: 768px)': {
+			'& .MuiAutocomplete-clearIndicator': {
+				display: 'block',
+			},
 		},
 	},
-	noBorder: {
-		'& .MuiInput-underline:before': {
-			borderBottom: '0px !important',
-		},
-		'& .MuiInput-underline:after': {
-			borderBottom: `0px !important`,
-		},
-	},
-	checkBox: {
-		marginLeft: 'initial',
-		marginRight: 'initial',
-		'& .MuiSvgIcon-root': {
-			fontSize: '20px',
-		},
-		'& .MuiTypography-body1': {
-			fontWeight: 'bold',
-			fontSize: '14px',
-			color: grayColor[6],
-		},
-		'& .MuiCheckbox-root': {
-			padding: '0px',
-		},
-		'& .Mui-checked': {
-			color: grayColor[6],
-		},
-	},
-	radio: {
-		marginLeft: 'initial',
-		marginRight: 'initial',
-		'& .MuiSvgIcon-root': {
-			fontSize: '20px',
-		},
-		'& .MuiTypography-body1': {
-			fontSize: '14px',
-			color: grayColor[6],
-		},
-		'& .MuiCheckbox-root': {
-			padding: '0px',
-		},
-		'& .Mui-checked': {
-			color: grayColor[6],
+	btn: {
+		...btn,
+		color: whiteColor,
+		backgroundColor: blueColor,
+		'&:hover': {
+			opacity: '0.8',
+			backgroundColor: blueColor,
 		},
 	},
 });

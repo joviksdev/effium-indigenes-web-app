@@ -43,12 +43,16 @@ const HeaderNav = () => {
 		<Box marginTop='10px'>
 			<Box className={classes.container}>
 				<MenuList className={classes.menu}>
-					<MenuItem>
-						<Link href='/'>
+					<Link href='/'>
+						<MenuItem>
 							<a>home</a>
-						</Link>
-					</MenuItem>
-					<MenuItem>membership</MenuItem>
+						</MenuItem>
+					</Link>
+					<Link href='/membership'>
+						<a>
+							<MenuItem>membership</MenuItem>
+						</a>
+					</Link>
 					<MenuItem onClick={toggleMediaDropdown}>
 						media <ExpandMoreIcon className={rotateMediaIcon} />
 					</MenuItem>
@@ -83,20 +87,24 @@ const HeaderNav = () => {
 							<Paper>
 								<List className={classes.list}>
 									{historyLists.map((list, key) => (
-										<ListItem onClick={toggleHistoryDropdown} button key={key}>
-											{list.icon}
-											{list.name}
-										</ListItem>
+										<Link href={list.path} key={key}>
+											<a>
+												<ListItem onClick={toggleHistoryDropdown} button>
+													{list.icon}
+													{list.name}
+												</ListItem>
+											</a>
+										</Link>
 									))}
 								</List>
 							</Paper>
 						</ClickAwayListener>
 					</Popper>
-					<MenuItem>
-						<Link href='/contact'>
+					<Link href='/contact'>
+						<MenuItem>
 							<a>contact</a>
-						</Link>
-					</MenuItem>
+						</MenuItem>
+					</Link>
 				</MenuList>
 			</Box>
 		</Box>

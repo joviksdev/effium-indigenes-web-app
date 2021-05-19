@@ -32,7 +32,7 @@ const styles = () => ({
 		zIndex: '2000',
 	},
 	imgWrapper: {
-		...transition,
+		transition: 'all 1s',
 		overflow: 'hidden',
 		position: 'relative',
 		'&:hover': {
@@ -60,7 +60,7 @@ const styles = () => ({
 			transform: 'translateY(50%)',
 		},
 		'& img': {
-			...transition,
+			transition: 'all 2s',
 			transform: 'scale(1)',
 		},
 	},
@@ -72,7 +72,7 @@ const styles = () => ({
 	},
 	viewBtn: {
 		...btn,
-		...transition,
+		transition: 'all 1s',
 		color: grayColor[6],
 		backgroundColor: whiteColor,
 		zIndex: '400',

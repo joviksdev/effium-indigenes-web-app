@@ -60,18 +60,20 @@ const Drawer = () => {
 
 	const lists = (
 		<List className={classes.listWrapper}>
-			<ListItem onClick={toggleDrawerHandler} button>
-				<Link href='/'>
-					<a className={classes.link}>
+			<Link href='/'>
+				<a className={classes.link}>
+					<ListItem onClick={toggleDrawerHandler} button>
 						<HomeIcon />
 						home
-					</a>
-				</Link>
-			</ListItem>
-			<ListItem onClick={toggleDrawerHandler} button>
-				<PeopleIcon />
-				membership
-			</ListItem>
+					</ListItem>
+				</a>
+			</Link>
+			<Link href='membership'>
+				<ListItem onClick={toggleDrawerHandler} button>
+					<PeopleIcon />
+					membership
+				</ListItem>
+			</Link>
 			<ListItem
 				className={cx({ [classes.collapseListItem]: isDisplayMedia })}
 				style={{
@@ -140,44 +142,52 @@ const Drawer = () => {
 			</ListItem>
 			<Collapse in={isDisplayAbout}>
 				<List>
-					<ListItem
-						className={classes.innerListItem}
-						onClick={closeAbout}
-						button
-					>
-						history
-					</ListItem>
-					<ListItem
-						className={classes.innerListItem}
-						onClick={closeAbout}
-						button
-					>
-						custom and tradition
-					</ListItem>
-					<ListItem
-						className={classes.innerListItem}
-						onClick={closeAbout}
-						button
-					>
-						language
-					</ListItem>
-					<ListItem
-						className={classes.innerListItem}
-						onClick={closeAbout}
-						button
-					>
-						festival
-					</ListItem>
+					<Link href='/about#history'>
+						<ListItem
+							className={classes.innerListItem}
+							onClick={closeAbout}
+							button
+						>
+							history
+						</ListItem>
+					</Link>
+					<Link href='/about#custom-and-tradition'>
+						<ListItem
+							className={classes.innerListItem}
+							onClick={closeAbout}
+							button
+						>
+							custom and tradition
+						</ListItem>
+					</Link>
+					<Link href='/about#festival'>
+						<ListItem
+							className={classes.innerListItem}
+							onClick={closeAbout}
+							button
+						>
+							festival
+						</ListItem>
+					</Link>
+					<Link href='/about#ASSEI'>
+						<ListItem
+							className={classes.innerListItem}
+							onClick={closeAbout}
+							button
+						>
+							ASSEI
+						</ListItem>
+					</Link>
 				</List>
 			</Collapse>
-			<ListItem onClick={toggleDrawerHandler} button>
-				<Link href='/contact'>
-					<a className={classes.link}>
+			<Link href='/contact'>
+				<a className={classes.link}>
+					<ListItem onClick={toggleDrawerHandler} button>
 						<ContactsIcon />
 						contact
-					</a>
-				</Link>
-			</ListItem>
+					</ListItem>
+				</a>
+			</Link>
 		</List>
 	);
 

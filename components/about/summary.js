@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import styles from './styles';
 import img from '../../assets/images/festive.jpeg';
 
@@ -17,6 +18,7 @@ const useStyles = makeStyles(styles);
 
 const Summary = () => {
 	const classes = useStyles();
+	const router = useRouter();
 	return (
 		<Box paddingTop='20px' paddingBottom='20px'>
 			<Box className={classes.content}>
@@ -46,7 +48,10 @@ const Summary = () => {
 							</Typography>
 
 							<Tooltip title='Read more' placement='right'>
-								<Button className={classes.readMoreBtn}>
+								<Button
+									onClick={() => router.push('/about')}
+									className={classes.readMoreBtn}
+								>
 									<ArrowRightAltIcon />
 								</Button>
 							</Tooltip>

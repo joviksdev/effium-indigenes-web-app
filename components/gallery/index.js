@@ -86,7 +86,12 @@ const index = () => {
 						className={classes.lightboxImg}
 					>
 						<img
-							style={{ width: '100%', zIndex: '1200px', borderRadius: '5px' }}
+							style={{
+								width: '100%',
+								zIndex: '1200px',
+								borderRadius: '5px',
+								userSelect: 'none',
+							}}
 							src={galleries[activeStep].src}
 						/>
 					</Box>

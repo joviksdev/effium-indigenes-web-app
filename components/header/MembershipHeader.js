@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './styles';
-import img from '../../assets/images/contactbg.png';
+import img from '../../assets/images/membership.jpg';
 import { grayColor, blackColor } from '../../assets/js/componentsStyles';
 
 // MAterial-ui/core
@@ -15,34 +15,31 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 const useStyles = makeStyles(styles);
 
-const ContactHeader = () => {
+const MembershipHeader = () => {
 	const classes = useStyles();
 	return (
 		<Box position='relative'>
 			<Box
-				// minHeight='60vh'
 				position='relative'
 				bgcolor={blackColor}
 				color={grayColor[4]}
 				className={classes.wrapper}
-				style={{
-					background: `linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url('${img}') no-repeat `,
-					backgroundColor: 'black',
-					backgroundSize: '100%',
-					backgroundPosition: 'center ',
-				}}
 			>
 				<Box height='100%' className={classes.subHeader}>
 					<Box>
 						<Box maxWidth='560px'>
-							<Typography className={classes.headerText}>Contact</Typography>
+							<Typography className={classes.headerText}>
+								Membership Signup
+							</Typography>
 
 							<Breadcrumbs className={classes.breadCrumbs}>
 								<Link href='/'>
 									<a className={classes.link}>Home</a>
 								</Link>
-								<Link href='/contact'>
-									<a className={`${classes.link} ${classes.active}`}>contact</a>
+								<Link href='/membership'>
+									<a className={`${classes.link} ${classes.active}`}>
+										Membership
+									</a>
 								</Link>
 							</Breadcrumbs>
 						</Box>
@@ -53,4 +50,4 @@ const ContactHeader = () => {
 	);
 };
 
-export default ContactHeader;
+export default MembershipHeader;

@@ -44,11 +44,6 @@ const styles = () => ({
 	card: {
 		...transition,
 		cursor: 'pointer',
-		'@media (min-width: 600px)': {
-			'&:hover': {
-				transform: 'scale(1.1) !important',
-			},
-		},
 	},
 	headerText: {
 		fontSize: '28px',

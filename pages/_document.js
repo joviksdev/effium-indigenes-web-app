@@ -17,6 +17,14 @@ export default class MyDocument extends Document {
 						rel='stylesheet'
 						href='https://fonts.googleapis.com/css?family=Yeseva One:400,700,800,900'
 					/>
+
+					{/* Map Quest */}
+					<script src='https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js'></script>
+					<link
+						type='text/css'
+						rel='stylesheet'
+						href='https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css'
+					/>
 				</Head>
 				<body>
 					<Main />
