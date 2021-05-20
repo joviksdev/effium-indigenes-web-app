@@ -38,7 +38,7 @@ const NewsHighlight = () => {
 						>
 							<Box display='flex' className={classes.gridItemHighLight}>
 								<Box className={classes.imageWrapper}>
-									<img width='100%' src={img} alt='news' />
+									<img width='100%' src={img} alt='news-preview' />
 								</Box>
 								<Box>
 									<Typography variant='body2' color='textSecondary'>

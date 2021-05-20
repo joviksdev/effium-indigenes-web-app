@@ -36,7 +36,7 @@ const Memebership = () => {
 				<Box height='100%' className={classes.membershipContainer}>
 					<Box>
 						<Box maxWidth='560px'>
-							<Typography className={classes.headerText}>
+							<Typography variant='h1' className={classes.headerText}>
 								Be a part of something beautify
 							</Typography>
 							<Typography variant='body2'>

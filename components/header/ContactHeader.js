@@ -35,7 +35,9 @@ const ContactHeader = () => {
 				<Box height='100%' className={classes.subHeader}>
 					<Box>
 						<Box maxWidth='560px'>
-							<Typography className={classes.headerText}>Contact</Typography>
+							<Typography variant='h1' className={classes.headerText}>
+								Contact
+							</Typography>
 
 							<Breadcrumbs className={classes.breadCrumbs}>
 								<Link href='/'>

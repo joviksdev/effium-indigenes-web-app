@@ -93,6 +93,7 @@ const index = () => {
 								userSelect: 'none',
 							}}
 							src={galleries[activeStep].src}
+							alt={`gallery-${activeStep}`}
 						/>
 					</Box>
 					<Box zIndex='1200px'>
