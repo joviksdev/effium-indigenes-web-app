@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Layout from '../components/layouts';
 import Gallery from '../components/gallery';
 import History from '../components/about/summary';
@@ -5,14 +6,29 @@ import NewsHighlight from '../components/news/highlight';
 import Carousel from '../components/carousel/HomePageCarousel';
 import Membership from '../components/parser/Membership';
 
+// material-ui/core
+import Box from '@material-ui/core/Box';
+
 export default function Home() {
 	return (
-		<Layout>
-			{/* <Carousel /> */}
-			<Membership />
-			<History />
-			<NewsHighlight />
-			<Gallery />
-		</Layout>
+		<Box>
+			<Head>
+				<title>Effium Indigennes</title>
+				<meta name='keywords' content='Effium' />
+				<meta name='keywords' content='Effium indigenes' />
+				<meta name='keywords' content='Official effium website' />
+				<meta
+					name='description'
+					content='This is the official web site of the indigenous poeple of effium'
+				/>
+			</Head>
+			<Layout>
+				{/* <Carousel /> */}
+				<Membership />
+				<History />
+				<NewsHighlight />
+				<Gallery />
+			</Layout>
+		</Box>
 	);
 }

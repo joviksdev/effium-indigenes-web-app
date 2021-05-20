@@ -31,7 +31,6 @@ export default function MyApp(props) {
 	return (
 		<AppState>
 			<Head>
-				<title>Effium Indigene</title>
 				<meta
 					name='viewport'
 					content='minimum-scale=1, initial-scale=1, width=device-width'

@@ -7,17 +7,6 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang='en'>
 				<Head>
-					{/* PWA primary color */}
-					<meta name='theme-color' />
-					<link
-						rel='stylesheet'
-						href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
-					/>
-					<link
-						rel='stylesheet'
-						href='https://fonts.googleapis.com/css?family=Yeseva One:400,700,800,900'
-					/>
-
 					{/* Map Quest */}
 					<script src='https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js'></script>
 					<link
