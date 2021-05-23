@@ -31,10 +31,7 @@ export default function MyApp(props) {
 	return (
 		<AppState>
 			<Head>
-				<meta
-					name='viewport'
-					content='minimum-scale=1, initial-scale=1, width=device-width'
-				/>
+				<meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
 				<link rel="manifest" href="/manifest.json" />
         <link
           href="/icons/icon-192x192.png"
@@ -48,6 +45,7 @@ export default function MyApp(props) {
           type="image/png"
           sizes="32x32"
         />
+				<link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
 				<meta name='application-name' content='Effium Indigenes App' />
           <meta name='apple-mobile-web-app-capable' content='yes' />
           <meta name='apple-mobile-web-app-status-bar-style' content='default' />
