@@ -21,11 +21,10 @@ export default function Home() {
 					name='description'
 					content='This is the official web site of the indigenous poeple of effium'
 				/>
-				<meta name='msvalidate.01' content='F35A6CC33585B8ED9FC1048DB1FEFD96' />
 			</Head>
 			<Layout>
-				{/* <Carousel /> */}
 				<Membership />
+				<Carousel />
 				<History />
 				<NewsHighlight />
 				<Gallery />

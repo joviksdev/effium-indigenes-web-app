@@ -65,11 +65,6 @@ const styles = () => ({
 		'& .MuiAutocomplete-clearIndicator': {
 			display: 'none',
 		},
-		'@media (min-width: 768px)': {
-			'& .MuiAutocomplete-clearIndicator': {
-				display: 'block',
-			},
-		},
 	},
 	btn: {
 		...btn,

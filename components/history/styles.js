@@ -20,6 +20,9 @@ const styles = () => ({
 			paddingTop: '0px',
 		},
 	},
+	cardHeader: {
+		fontSize: '36px',
+	},
 	textHeader: {
 		color: grayColor[6],
 		margin: '20px 0px',

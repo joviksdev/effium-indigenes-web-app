@@ -23,9 +23,10 @@ const styles = () => ({
 		color: infoColor[4],
 	},
 	summaryContainer: {
-		...container,
-		backgroundColor: grayColor[8],
-		minHeight: '40vh',
+		background: '#EFFAFF',
+		padding: '40px 0px',
+		display: 'flex',
+		alignItems: 'center',
 	},
 	content: {
 		...container,
@@ -46,6 +47,13 @@ const styles = () => ({
 		},
 		'& small': {
 			fontSize: '10px !important',
+		},
+	},
+	title: {
+		margin: '10px 0px 20px',
+		color: infoColor[4],
+		'@media (min-width: 760px)': {
+			margin: '0px 0px 20px',
 		},
 	},
 	subHeaderText: {
@@ -73,16 +81,16 @@ const styles = () => ({
 	},
 	readMoreBtn: {
 		...btn,
-		color: grayColor[7],
+		color: grayColor[6],
 		borderRadius: '50%',
-		border: `1px solid ${grayColor[7]}`,
+		border: `1px solid ${grayColor[6]}`,
 		marginTop: '20px',
 		height: '50px',
 		width: '50px',
 		'&:hover': {
 			backgroundColor: infoColor[4],
 			border: `1px solid ${infoColor[4]}`,
-			color: grayColor[8],
+			color: whiteColor,
 		},
 	},
 	moreIcon: {

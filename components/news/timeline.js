@@ -1,7 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles';
-import img from '../../assets/images/img2.jpg';
+import img from '../../assets/images/c2.jpg';
+import img2 from '../../assets/images/c3.jpg';
 
 // Material-ui/Core
 import Timeline from '@material-ui/lab/Timeline';
@@ -23,16 +25,14 @@ const TimelineContainer = () => {
 	const classes = useStyles();
 	const data = [
 		{
-			title: 'Title',
-			body:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, libero.',
+			title: 'Effium crisis',
+			body: 'Group faults kidnap, murder of rtd Inspector.',
 			img,
 		},
 		{
-			title: 'Title',
-			body:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, libero.',
-			img,
+			title: 'Effium crisis',
+			body: 'Group commends Umahi for return of peace.',
+			img: img2,
 		},
 	];
 	return (
@@ -61,7 +61,12 @@ const TimelineContainer = () => {
 									gridGap='10px'
 								>
 									<Box>
-										<img width='100%' src={news.img} alt={news.title} />
+										<Image
+											width='400px'
+											height='300px'
+											src={news.img}
+											alt={news.title}
+										/>
 									</Box>
 									<Typography variant='body2'>{news.body}</Typography>
 								</Box>

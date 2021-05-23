@@ -1,6 +1,7 @@
 import img1 from './festive.jpeg';
 import img2 from './speaker.jpeg';
-import img3 from './women.jpeg';
+import img6 from './img6.jpg';
+import img4 from './img5.jpg';
 
 const galleries = [
 	{
@@ -12,11 +13,11 @@ const galleries = [
 		alt: 'gallery slide 2',
 	},
 	{
-		src: img3,
+		src: img4,
 		alt: 'gallery slide 3',
 	},
 	{
-		src: img2,
+		src: img6,
 		alt: 'gallery slide 4',
 	},
 ];

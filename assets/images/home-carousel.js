@@ -1,11 +1,12 @@
-import img1 from './img1.jpg';
-import img2 from './img2.jpg';
-import img3 from './img3.jpg';
-import img4 from './img4.jpg';
+import img1 from './c1.jpg';
+import img2 from './c2.jpg';
+import img3 from './c3.jpg';
+import img4 from './img5.jpg';
 
 const galleries = [
 	{
 		src: img1,
+		title: 'title',
 	},
 	{
 		src: img2,

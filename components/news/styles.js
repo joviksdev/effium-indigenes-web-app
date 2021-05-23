@@ -19,11 +19,9 @@ const styles = () => ({
 		marginBottom: '15px',
 		color: grayColor[6],
 	},
-	subTitle: {
-		margin: '10px 0px',
-	},
+	subTitle: {},
 	smallTextHeader: {
-		fontSize: '14px',
+		fontSize: '16px',
 		color: grayColor[7],
 		'& small': {
 			fontSize: '11px',

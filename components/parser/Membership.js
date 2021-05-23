@@ -39,12 +39,11 @@ const Memebership = () => {
 							<Typography variant='h1' className={classes.headerText}>
 								Be a part of something beautify
 							</Typography>
-							<Typography variant='body2'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Accusantium repellat quis dolorem nihil laborum molestiae dicta
-								vitae consectetur ducimus voluptatem.
+							<Typography className={classes.text} variant='body1'>
+								Connecting with community members is first about building
+								relationships. It is the most important part of creating change.
 							</Typography>
-							<Link href='/'>
+							<Link href='/membership'>
 								<a className={classes.link}>
 									Become a member <ArrowRightAltIcon />
 								</a>
@@ -69,10 +68,12 @@ const Memebership = () => {
 						data-aos-once='true'
 					>
 						<CardContent>
-							<Typography variant='h6'>Free Registration</Typography>
+							<Typography className={classes.cardTitle} variant='h6'>
+								Free Registration
+							</Typography>
 							<Typography variant='body2'>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
-								voluptatem.
+								No Payment required, register now and build relationship one at
+								a time
 							</Typography>
 						</CardContent>
 					</Card>
@@ -86,10 +87,13 @@ const Memebership = () => {
 						data-aos-once='true'
 					>
 						<CardContent>
-							<Typography variant='h6'>Friendly Community</Typography>
+							<Typography className={classes.cardTitle} variant='h6'>
+								Friendly Community
+							</Typography>
 							<Typography variant='body2'>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
-								voluptatem.
+								Be part of a community where you have the opportunity to meet
+								other people who share common goals and relate friendly with
+								each other.
 							</Typography>
 						</CardContent>
 					</Card>
@@ -103,10 +107,12 @@ const Memebership = () => {
 						data-aos-once='true'
 					>
 						<CardContent>
-							<Typography variant='h6'>Community support</Typography>
+							<Typography className={classes.cardTitle} variant='h6'>
+								Community support
+							</Typography>
 							<Typography variant='body2'>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
-								voluptatem.
+								Benifit from varieties of support the community provide to her
+								members.
 							</Typography>
 						</CardContent>
 					</Card>

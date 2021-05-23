@@ -2,7 +2,6 @@ import {
 	container,
 	transition,
 	infoColor,
-	whiteColor,
 } from '../../assets/js/componentsStyles';
 
 const styles = () => ({
@@ -12,7 +11,6 @@ const styles = () => ({
 	},
 	membershipInfoContainer: {
 		...container,
-		maxWidth: '800px',
 		paddingTop: '8px',
 		paddingBottom: '8px',
 		gridTemplateColumns: 'repeat(1, 1fr)',
@@ -45,6 +43,10 @@ const styles = () => ({
 		...transition,
 		cursor: 'pointer',
 	},
+	cardTitle: {
+		marginBottom: '10px',
+		color: infoColor[4],
+	},
 	headerText: {
 		fontSize: '28px',
 		marginBottom: '20px',
@@ -53,9 +55,12 @@ const styles = () => ({
 			fontSize: '40px',
 		},
 	},
+	text: {
+		lineHeight: '2',
+	},
 	link: {
 		zIndex: '1000',
-		marginTop: '10px',
+		marginTop: '20px',
 		display: 'inline-block',
 		textTransform: 'uppercase',
 		'& .MuiSvgIcon-root': {

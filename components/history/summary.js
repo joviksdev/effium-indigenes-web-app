@@ -29,8 +29,11 @@ const Summary = () => {
 						sm={6}
 					>
 						<Box>
-							<Typography className={classes.textHeader}>
-								Our History
+							<Typography
+								style={{ fontSize: '36px' }}
+								className={classes.cardHeader}
+							>
+								Our Histor
 							</Typography>
 							<Typography
 								style={{ lineHeight: '2' }}

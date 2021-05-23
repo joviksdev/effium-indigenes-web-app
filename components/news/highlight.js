@@ -1,6 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './styles';
-import img from '../../assets/images/festive.jpeg';
+import img from '../../assets/images/c1.jpg';
 import Link from 'next/link';
 import Timeline from './timeline';
 
@@ -20,7 +21,11 @@ const NewsHighlight = () => {
 	return (
 		<Box bgcolor='white' className={classes.wrapper}>
 			<Box className={classes.container}>
-				<Typography className={classes.textHeader} variant='h5'>
+				<Typography
+					style={{ marginBottom: '20px' }}
+					className={classes.textHeader}
+					variant='h5'
+				>
 					News
 				</Typography>
 				<Box>
@@ -38,20 +43,32 @@ const NewsHighlight = () => {
 						>
 							<Box display='flex' className={classes.gridItemHighLight}>
 								<Box className={classes.imageWrapper}>
-									<img width='100%' src={img} alt='news-preview' />
+									<Image
+										width='400px'
+										height='300px'
+										src={img}
+										alt='news-preview'
+									/>
 								</Box>
 								<Box>
-									<Typography variant='body2' color='textSecondary'>
-										{new Date().toDateString()}
-									</Typography>
-									<Typography className={classes.subTitle} variant='h6'>
-										Title
-									</Typography>
+									<Box marginBottom='20px'>
+										<Typography variant='body2' color='textSecondary'>
+											{new Date().toDateString()}
+										</Typography>
+										<Typography className={classes.subTitle} variant='h6'>
+											EFFIUM CRISIS
+										</Typography>
+										<Typography variant='body2'>
+											Who shaked the jar: A personal confesion of Godwin Nwankwo
+											(aka Nkwor Motors) from his ghana exile.
+										</Typography>
+									</Box>
+
 									<Typography paragraph variant='body1'>
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-										Asperiores, repellat atque officia, corrupti exercitationem
-										autem debitis, enim nihil delectus pariatur maiores eius
-										nobis voluptate.
+										Recall that in my official publication on "Effium Crisis:
+										Who is to be Blamed" one Mr. Godwin Nwankwo (aka Nkwor
+										Motors) was hugely indicted for his obvious roles that led
+										to the cause of the crisis in Effium...
 									</Typography>
 									<Link href='/'>
 										<a className={classes.link}>

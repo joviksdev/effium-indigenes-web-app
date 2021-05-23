@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import styles from './styles';
 import galleries from '../../assets/images/gallery';
 import Link from 'next/link';
@@ -62,7 +63,12 @@ const index = () => {
 						>
 							<ImageSearchIcon />
 						</Button>
-						<img style={{ width: '100%' }} src={gallery.src} />
+						<Image
+							width='400px'
+							height='300px'
+							src={gallery.src}
+							alt={`preview-${key}`}
+						/>
 					</Box>
 				))}
 			</Box>
@@ -85,13 +91,15 @@ const index = () => {
 						margin='auto'
 						className={classes.lightboxImg}
 					>
-						<img
+						<Image
 							style={{
 								width: '100%',
 								zIndex: '1200px',
 								borderRadius: '5px',
 								userSelect: 'none',
 							}}
+							width='600px'
+							height='400px'
 							src={galleries[activeStep].src}
 							alt={`gallery-${activeStep}`}
 						/>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from './styles';
 import img from '../../assets/images/festive.jpeg';
@@ -20,7 +21,7 @@ const Summary = () => {
 	const classes = useStyles();
 	const router = useRouter();
 	return (
-		<Box paddingTop='20px' paddingBottom='20px'>
+		<Box className={classes.summaryContainer}>
 			<Box className={classes.content}>
 				<Grid alignItems='center' container>
 					<Grid
@@ -31,8 +32,8 @@ const Summary = () => {
 						sm={6}
 					>
 						<Box>
-							<Typography className={classes.textHeader}>
-								Our History
+							<Typography variant='h4' className={classes.title}>
+								History of Effium
 							</Typography>
 							<Typography
 								style={{ lineHeight: '2' }}
@@ -63,7 +64,13 @@ const Summary = () => {
 							margin='auto'
 							maxWidth='400px'
 						>
-							<img style={{ width: '100%' }} src={img} alt='about-us' />
+							<Image
+								height='300px'
+								width='400px'
+								style={{ width: '100%' }}
+								src={img}
+								alt='about-us'
+							/>
 						</Box>
 					</Grid>
 				</Grid>
