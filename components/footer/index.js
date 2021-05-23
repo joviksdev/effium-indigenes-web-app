@@ -8,7 +8,8 @@ const Index = () => {
 	return (
 		<Box padding='8px 15px'>
 			<Typography align='center' variant='body2' color='textSecondary'>
-				All Right reserve &copy; {new Date().getFullYear()}, Effium Indigenes.
+				Copyright &copy; {new Date().getFullYear()}, Effium Indigenes. All Right
+				reserve.
 			</Typography>
 		</Box>
 	);
