@@ -13,13 +13,13 @@ export default function Home() {
 	return (
 		<Box>
 			<Head>
-				<title>Effium Indigennes</title>
+				<title>Effium Indigenes</title>
 				<meta name='keywords' content='Effium' />
 				<meta name='keywords' content='Effium indigenes' />
 				<meta name='keywords' content='Official effium website' />
 				<meta
 					name='description'
-					content='This is the official web site of the indigenous poeple of effium'
+					content='Official web site of the indigenous poeple of effium'
 				/>
 			</Head>
 			<Layout>

@@ -25,8 +25,10 @@ const styles = () => ({
 	},
 	carouselContent: {
 		width: '100%',
+		marginTop: '40px',
 		position: 'relative',
 		'@media (min-width: 768px)': {
+			marginTop: '0px',
 			marginLeft: '40px',
 		},
 	},

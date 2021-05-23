@@ -65,10 +65,14 @@ const HeaderNav = () => {
 							<Paper>
 								<List className={classes.list}>
 									{mediaLists.map((list, key) => (
-										<ListItem onClick={toggleMediaDropdown} button key={key}>
+											<Link href={list.path} key={key}>
+											<a>
+										<ListItem onClick={toggleMediaDropdown} button>
 											{list.icon}
 											{list.name}
 										</ListItem>
+										</a>
+										</Link>
 									))}
 								</List>
 							</Paper>

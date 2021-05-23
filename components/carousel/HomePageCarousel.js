@@ -57,7 +57,7 @@ const HomePageCarousel = () => {
 									position='relative'
 									display='flex'
 								>
-									<Box>
+									<Box display='flex' justifyContent='center'>
 										<Image
 											width='400px'
 											height='300px'

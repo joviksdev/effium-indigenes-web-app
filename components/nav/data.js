@@ -5,7 +5,7 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 const mediaLists = [
 	{
 		name: 'news',
-		path: '/',
+		path: '/news',
 		icon: <AnnouncementIcon />,
 	},
 	{

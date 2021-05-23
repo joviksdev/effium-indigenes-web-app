@@ -35,6 +35,38 @@ export default function MyApp(props) {
 					name='viewport'
 					content='minimum-scale=1, initial-scale=1, width=device-width'
 				/>
+				<link rel="manifest" href="/manifest.json" />
+        <link
+          href="/icons/icon-192x192.png"
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+        />
+        <link
+          href="/icons/icon-256x256.png"
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+        />
+				<meta name='application-name' content='Effium Indigenes App' />
+          <meta name='apple-mobile-web-app-capable' content='yes' />
+          <meta name='apple-mobile-web-app-status-bar-style' content='default' />
+          <meta name='apple-mobile-web-app-title' content='Effium Indigenes App' />
+          <meta name='description' content='Effium Indigenes PWA App' />
+          <meta name='mobile-web-app-capable' content='yes' />
+          <meta name='theme-color' content='#FFFFFF' />
+				<meta name='twitter:card' content='summary' />
+				<meta name='twitter:url' content='https://www.effiumindigenes.org/' />
+				<meta name='twitter:title' content='Effium Indigenes App' />
+				<meta name='twitter:description' content='Effium Indigenes PWA App' />
+				<meta name='twitter:image' content='https://www.effiumindigenes.org/static/icons/android-chrome-192x192.png' />
+				<meta name='twitter:creator' content='@EffiumIndigenes' />
+				<meta property='og:type' content='website' />
+				<meta property='og:title' content='Effium Indigenes App' />
+				<meta property='og:description' content='Effium Indigenes PWA App' />
+				<meta property='og:site_name' content='Effium Indigenes App' />
+				<meta property='og:url' content='https://www.effiumindigenes.org/' />
+				<meta property='og:image' content='https://www.effiumindigenes.org/static/icons/apple-touch-icon.png' />
 			</Head>
 			{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 			<CssBaseline />
