@@ -1,7 +1,7 @@
 {
     "theme_color": "#0097a7",
     "background_color": "#0097a7",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Effium Indigenes",
