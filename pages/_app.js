@@ -52,7 +52,7 @@ export default function MyApp(props) {
           <meta name='apple-mobile-web-app-title' content='Effium Indigenes App' />
           <meta name='description' content='Effium Indigenes PWA App' />
           <meta name='mobile-web-app-capable' content='yes' />
-          <meta name='theme-color' content='#FFFFFF' />
+          <meta name='theme-color' content='#0097a7' />
 				<meta name='twitter:card' content='summary' />
 				<meta name='twitter:url' content='https://www.effiumindigenes.org/' />
 				<meta name='twitter:title' content='Effium Indigenes App' />
