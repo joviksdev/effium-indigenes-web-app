@@ -31,6 +31,9 @@ const styles = () => ({
 	},
 	submitBtn: {
 		width: '100%',
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
 		color: grayColor[8],
 		backgroundColor: grayColor[7],
 		border: `1px solid ${grayColor[7]}`,

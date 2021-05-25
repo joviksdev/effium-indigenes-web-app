@@ -69,7 +69,7 @@ export default function MyApp(props) {
 				<meta name='twitter:description' content='Effium Indigenes PWA App' />
 				<meta
 					name='twitter:image'
-					content='https://www.effiumindigenes.org/static/icons/android-chrome-192x192.png'
+					content='https://www.effiumindigenes.org/icons/icon-192x192.png'
 				/>
 				<meta name='twitter:creator' content='@EffiumIndigenes' />
 				<meta property='og:type' content='website' />
@@ -79,7 +79,7 @@ export default function MyApp(props) {
 				<meta property='og:url' content='https://www.effiumindigenes.org/' />
 				<meta
 					property='og:image'
-					content='https://www.effiumindigenes.org/static/icons/apple-touch-icon.png'
+					content='https://www.effiumindigenes.org/icons/apple-touch-icon.png'
 				/>
 			</Head>
 			{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

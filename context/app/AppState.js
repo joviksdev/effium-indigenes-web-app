@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import axios from 'axios';
 import appReducer from './appReducer';
 import AppContext from './appContext';
 
@@ -17,11 +18,21 @@ const AppState = (props) => {
 		});
 	};
 
+	const sendMessage = async (details) => {
+		try {
+			const res = await axios.post('/api/contact', details);
+			return res.data;
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
 	return (
 		<AppContext.Provider
 			value={{
 				isDisplayDrawer: state.isDisplayDrawer,
 				toggleDrawer,
+				sendMessage,
 			}}
 		>
 			{props.children}
