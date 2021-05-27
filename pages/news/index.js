@@ -1,17 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '../../components/layouts';
-import NewsItem from './NewsItem';
-import styles from './styles';
-
-// Material-ui/Core
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(styles);
+import NewsItem from '../../components/news/NewsItem';
+import News from '../../components/news/News';
 
 const contact = () => {
-	const classes = useStyles();
 	return (
 		<>
 			<Head>
@@ -22,9 +15,9 @@ const contact = () => {
 				/>
 			</Head>
 			<Layout>
-				<Box marginTop='20px' className={classes.container}>
+				<News>
 					<NewsItem />
-				</Box>
+				</News>
 			</Layout>
 		</>
 	);

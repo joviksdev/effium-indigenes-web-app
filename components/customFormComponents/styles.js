@@ -2,6 +2,7 @@ import {
 	transition,
 	whiteColor,
 	grayColor,
+	infoColor,
 } from '../../assets/js/componentsStyles';
 
 const styles = () => ({
@@ -11,7 +12,7 @@ const styles = () => ({
 			borderBottom: `2px solid ${grayColor[6]}`,
 		},
 		'& .MuiInputLabel-root.Mui-focused': {
-			color: `${grayColor[6]} !important`,
+			color: `${infoColor[4]} !important`,
 		},
 
 		'& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
@@ -19,7 +20,7 @@ const styles = () => ({
 		},
 
 		'& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-			border: `2px solid ${grayColor[6]}`,
+			border: `2px solid ${infoColor[4]}`,
 		},
 
 		'& .MuiOutlinedInput-input': {
@@ -70,13 +71,14 @@ const styles = () => ({
 		'& .MuiTypography-body1': {
 			fontWeight: 'bold',
 			fontSize: '14px',
+			marginLeft: '10px',
 			color: grayColor[6],
 		},
 		'& .MuiCheckbox-root': {
 			padding: '0px',
 		},
 		'& .Mui-checked': {
-			color: grayColor[6],
+			color: infoColor[4],
 		},
 	},
 	radio: {

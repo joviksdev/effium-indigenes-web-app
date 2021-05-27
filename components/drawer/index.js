@@ -96,6 +96,8 @@ const Drawer = () => {
 			</ListItem>
 			<Collapse in={isDisplayMedia}>
 				<List>
+					<Link href='/news'>
+					<a>
 					<ListItem
 						className={classes.innerListItem}
 						onClick={closeMedia}
@@ -103,6 +105,9 @@ const Drawer = () => {
 					>
 						news
 					</ListItem>
+
+						</a>
+					</Link>
 					<ListItem
 						className={classes.innerListItem}
 						onClick={closeMedia}

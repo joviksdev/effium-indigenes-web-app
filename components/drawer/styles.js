@@ -2,6 +2,8 @@ import { btn, transition, grayColor } from '../../assets/js/componentsStyles';
 
 const styles = () => ({
 	drawer: {
+		width: '100%',
+		backgroundColor: 'rgba(0, 0, 0, 0.5)',
 		'& .MuiDrawer-paper': {
 			width: '80%',
 			display: 'flex',

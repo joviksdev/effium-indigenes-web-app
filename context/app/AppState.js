@@ -27,12 +27,23 @@ const AppState = (props) => {
 		}
 	};
 
+	// Register New Member
+	const registerMember = async (details) => {
+		try {
+			const res = await axios.post('/api/membership', details);
+			return res.data;
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
 	return (
 		<AppContext.Provider
 			value={{
 				isDisplayDrawer: state.isDisplayDrawer,
 				toggleDrawer,
 				sendMessage,
+				registerMember,
 			}}
 		>
 			{props.children}

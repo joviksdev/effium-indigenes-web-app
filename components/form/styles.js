@@ -4,9 +4,19 @@ import {
 	btn,
 	whiteColor,
 	blueColor,
+	infoColor,
+	dangerColor,
 } from '../../assets/js/componentsStyles';
 
 const styles = () => ({
+	subHeaderText: {
+		fontWeight: 'bold',
+		color: infoColor[4],
+	},
+	membershipContainer: {
+		maxWidth: '768px',
+		margin: '10px auto',
+	},
 	text: {
 		display: 'flex',
 		alignItems: 'center',
@@ -24,7 +34,7 @@ const styles = () => ({
 			borderBottom: `2px solid ${grayColor[6]}`,
 		},
 		'& .MuiInputLabel-root.Mui-focused': {
-			color: `${grayColor[6]} !important`,
+			color: `${infoColor[4]} !important`,
 		},
 
 		'& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
@@ -32,7 +42,7 @@ const styles = () => ({
 		},
 
 		'& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-			border: `2px solid ${grayColor[6]}`,
+			border: `2px solid ${infoColor[4]}`,
 		},
 
 		'& .MuiOutlinedInput-input': {
@@ -66,14 +76,23 @@ const styles = () => ({
 			display: 'none',
 		},
 	},
+	infoIcon: {
+		color: infoColor[4],
+		fontSize: '18px',
+		marginRight: '5px',
+	},
 	btn: {
 		...btn,
 		color: whiteColor,
-		backgroundColor: blueColor,
+		backgroundColor: infoColor[4],
 		'&:hover': {
 			opacity: '0.8',
-			backgroundColor: blueColor,
+			backgroundColor: infoColor[4],
 		},
+	},
+	errorText: {
+		color: dangerColor[0],
+		fontWeight: 'initial',
 	},
 });
 
